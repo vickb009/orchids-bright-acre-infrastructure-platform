@@ -1,0 +1,54 @@
+2026-02-09T21:13:54.699Z [console][error] ./user/app/src/app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/Footer'
+   6 | import Script from "next/script";
+   7 | import Header from "@/components/Header";
+>  8 | import Footer from "@/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | const inter = Inter({ subsets: ["latin"] });
+  11 |
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/user/app
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-09T21:13:54.699Z [console][error] ./user/app/src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/Header'
+   5 | import ErrorReporter from "@/components/ErrorReporter";
+   6 | import Script from "next/script";
+>  7 | import Header from "@/components/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import Footer from "@/components/Footer";
+   9 |
+  10 | const inter = Inter({ subsets: ["latin"] });
+
+Import map: aliased to relative './src/components/Header' inside of [project]/user/app
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-09T21:13:54.699Z [console][error] ./user/app/src/app/layout.tsx:8:1
+Module not found: Can't resolve '@/components/Footer'
+   6 | import Script from "next/script";
+   7 | import Header from "@/components/Header";
+>  8 | import Footer from "@/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | const inter = Inter({ subsets: ["latin"] });
+  11 |
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/user/app
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-09T21:13:54.699Z [console][error] ./user/app/src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/Header'
+   5 | import ErrorReporter from "@/components/ErrorReporter";
+   6 | import Script from "next/script";
+>  7 | import Header from "@/components/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import Footer from "@/components/Footer";
+   9 |
+  10 | const inter = Inter({ subsets: ["latin"] });
+
+Import map: aliased to relative './src/components/Header' inside of [project]/user/app
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-09T23:55:24.446Z [console][error] Failed to fetch RSC payload for https://3000-4098ad0d-7c9c-4608-b617-54b3dfd27c49.orchids.cloud/focus-areas. Falling back to browser navigation. {}
+2026-02-09T23:59:12.645Z [console][error] Failed to fetch RSC payload for https://3000-4098ad0d-7c9c-4608-b617-54b3dfd27c49.orchids.cloud/. Falling back to browser navigation. {}

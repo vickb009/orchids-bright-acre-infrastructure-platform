@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Poppins', sans-serif;
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-orange: var(--accent-orange);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #1a1a2e;
+  --primary: #0B3C89;
+  --primary-foreground: #FFFFFF;
+  --accent: #D9A441;
+  --accent-orange: #F28C28;
+  --muted: #F5F7FA;
+  --muted-foreground: #4A5568;
+  --border: #E2E8F0;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Form styles */
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--border);
+  background: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--foreground);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(11, 60, 137, 0.1);
+}
+
+.form-input::placeholder {
+  color: #94A3B8;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  background: var(--primary);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  letter-spacing: 0.025em;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #092d66;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
